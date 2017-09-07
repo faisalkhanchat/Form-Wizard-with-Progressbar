@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product Shocase 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background:#fafafa;padding:40px 0;">
+   
+     <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+   <!-- Modal -->
+  <div class="modal fade formwizardpopup" id="myModal" role="dialog">
+    <div class="modal-dialog">    
+      <!-- Modal content-->
+      <div class="modal-content banner">
+         <div class="modal-body">         
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              	<div class="form_wizard" id="myWizard">
+      		
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 25%;">                    
+                </div>
+            </div>            
+                <div class="progress-bar-info">20% complete</div>
+            <div class="navbar hidden">
+                <div class="navbar-inner">
+                    <ul class="nav nav-pills nav-wizard">
+                        <li class="active">
+                            <a class="hidden-xs" href="#step1" data-toggle="tab" data-step="1">1. Details</a>
+                            <a class="visible-xs" href="#step1" data-toggle="tab" data-step="1">1.</a>
+                            <div class="nav-arrow"></div>
+                        </li>
+                        <li class="disabled">
+                            <div class="nav-wedge"></div>
+                            <a class="hidden-xs" href="#step2" data-toggle="tab" data-step="2">2. Shipping</a>
+                            <a class="visible-xs" href="#step2" data-toggle="tab" data-step="2">2.</a>
+                            <div class="nav-arrow"></div>
+                        </li>
+                        <li class="disabled">
+                            <div class="nav-wedge"></div>
+                            <a class="hidden-xs" href="#step3" data-toggle="tab" data-step="3">3. Payment</a>
+                            <a class="visible-xs" href="#step3" data-toggle="tab" data-step="3">3.</a>
+                            <div class="nav-arrow"></div>
+                        </li>
+                        <li class="disabled">
+                            <div class="nav-wedge"></div>
+                            <a class="hidden-xs" href="#step4" data-toggle="tab" data-step="4">4. Review</a>
+                            <a class="visible-xs" href="#step4" data-toggle="tab" data-step="4">4.</a>
+                        </li>
+                        <li class="disabled">
+                            <div class="nav-wedge"></div>
+                            <a class="hidden-xs" href="#step5" data-toggle="tab" data-step="5">4. Review</a>
+                            <a class="visible-xs" href="#step5" data-toggle="tab" data-step="5">4.</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="step1">
+                   <div class="data_blk">
+                        <h3>Do you have any large itmes that need to be hauled?    </h3>
+                        <p>Just larger than 5 min feel to lorem ipsum doller sit.</p>
+                    </div>                   
+                    <div class="form_blk">
+                        <div class="radio">
+                          <label><input type="radio" name="optradio">Yes</label>
+                        </div>
+                        <div class="radio">
+                          <label><input type="radio" name="optradio">No</label>
+                        </div>  
+                    </div>                    
+                    <div  class="row">
+                        <div class="col-sm-6">
+                            <button class="btn btn-default back" type="button"><i class="a_right"></i> &nbsp; Back </button>                            
+                        </div>
+                        <div class="col-sm-6 text-right">
+                                <button class="btn btn-primary btn-lg  next" type="submit">Next</button>
+                        </div>                            
+                    </div>      
+                                          
+                </div>
+                
+                <div class="tab-pane fade" id="step2">
+                    <div class="data_blk">
+                        <h3> What do you have that you would like to be hauled away? </h3>
+                    </div>                   
+                    <div class="form_blk">
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Furniture</label>
+                        </div>
+                        
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Appliances</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Electronics</label>
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">Scrap Material</label>
+                        </div>
+                        <div class="checkbox other">
+                          <label><input type="checkbox" value=""> <input class="" type="text" required placeholder="Other"> </label>
+                        </div>
+                        
+                        
+                   
+                    </div>                    
+                    <div  class="row">
+                        <div class="col-sm-6">
+                            <button class="btn btn-default back" type="button"><i class="a_right"></i> &nbsp; Back </button>                            
+                        </div>
+                        <div class="col-sm-6 text-right">
+                                <button class="btn btn-primary btn-lg  next" type="submit">Next</button>
+                        </div>                            
+                    </div>      
+                    
+                </div>
+                <div class="tab-pane fade" id="step3">
+                    <div class="data_blk">
+                        <h3>Any Special Requests?    </h3>
+                    </div>                   
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Truck must come in empty"></textarea>
+                        </div>               
+                    <div  class="row">
+                        <div class="col-sm-6">
+                            <button class="btn btn-default back" type="button"><i class="a_right"></i> &nbsp; Back </button>                            
+                        </div>
+                        <div class="col-sm-6 text-right">
+                                <button class="btn btn-primary btn-lg  next" type="submit">Next</button>
+                        </div>                            
+                    </div>      
+                    
+                </div>
+                <div class="tab-pane fade" id="step4">
+                    <div class="data_blk">
+                        <h3>Please confirm where you need to junk removal specialist.  </h3>
+                    </div>                   
+                    <div class="zip_blk">
+                        <input type="text" name="zipcode" placeholder="Zipcode" class="form-control">
+                    </div>              
+                    <div  class="row">
+                        <div class="col-sm-3">
+                            <button class="btn btn-default back" type="button"><i class="a_right"></i> &nbsp; Back </button>                            
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="sm_text">By clicking submit you agree to the <a href="">Term of use</a> and <a href="">Privacy policy</a></div> 
+                        </div>
+                        <div class="col-sm-3 text-right">
+                                <button class="btn btn-primary btn-lg  next" type="submit">Next</button>
+                        </div>                            
+                    </div>      
+                    
+                </div>
+                <div class="tab-pane fade" id="step5">
+                    <div class="data_blk">
+                        <h3>Get responses with text alerts.  </h3>
+                    </div>                   
+                    <div class="zip_blk">
+                        <input type="text" name="zipcode" placeholder="(971) 577-0949" class="form-control">
+                        <div class="checkbox">
+                          <label><input type="checkbox" value=""> Junk removal special may call me directly with quotes.</label>
+                        </div>                        
+                    </div>  
+                    <div class="sm_text">By clicking finish you <a href="">electricily authorise </a> we will send you automated text message to notify you of quotes and activity from us. pros recieving text message is authorised.</div> 
+                               
+                    <div  class="row">
+                        <div class="col-sm-6">
+                            <button class="btn btn-default back" type="button"><i class="a_right"></i> &nbsp; Back </button>                            
+                        </div>
+                        
+                        <div class="col-sm-6 text-right">
+                                <button class="btn btn-primary btn-lg  next" type="submit">Finish</button>
+                        </div>                            
+                    </div>      
+                    
+                </div>
+                
+                
+            </div></div>
+        <div id="push"></div>
+    
+         </div>
+         
+      </div>
+      
+    </div>
+  </div>
+
+   
+   
+   
+   
+   
+    <div class="container">
+       <div class="row">
+           
+        <div class="col-sm-6 col-sm-offset-3">
+            
+    
+    
+        
+            
+        </div>
+       </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+$(document).ready(function(){
+    
+    $('.next').click(function(){
+
+  var nextId = $(this).parents('.tab-pane').next().attr("id");
+  $('[href="#'+nextId+'"]').tab('show');
+        //alert("next"+nextId);
+        $('.formwizardpopup .modal-content').removeClass('banner');
+        
+  return false;
+  
+})
+
+$('.back').click(function(){
+  var prevId = $(this).parents('.tab-pane').prev().attr("id");
+  $('[href="#'+prevId+'"]').tab('show'); //alert("back"+prevId);
+
+  return false;
+})
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  //update progress
+  var step = $(e.target).data('step');
+  var percent = (parseInt(step) / 5) * 100;
+  
+  $('.progress-bar').css({width: percent + '%'});
+  $('.progress-bar-info').text("" + percent + "% complete");
+  
+  //e.relatedTarget // previous tab
+  
+})
+$('.first').click(function(){
+  $('#myWizard a:first').tab('show')
+
+})    
+}); 
+        
+        
+        
+    
+    </script>
+</body>
+</html>
